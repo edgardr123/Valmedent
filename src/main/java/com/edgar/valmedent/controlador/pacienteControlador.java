@@ -50,8 +50,22 @@ public class pacienteControlador {
 				.orElseThrow(() -> new ResourceNotFoundException(("No existe el paciente con el ID: " + id)));
 		
 		paciente.setNombre(detallesPaciente.getNombre());
-		paciente.setApellido(detallesPaciente.getApellido());
+		paciente.setApellidoP(detallesPaciente.getApellidoP());
+		paciente.setApellidoM(detallesPaciente.getApellidoM());
 		paciente.setEmail(detallesPaciente.getEmail());
+		paciente.setTelefono(detallesPaciente.getTelefono());
+		paciente.setDireccion(detallesPaciente.getDireccion());
+		paciente.setEmail(detallesPaciente.getEmail());
+		paciente.setEmail(detallesPaciente.getEmail());
+		paciente.setCiudad(detallesPaciente.getCiudad());
+		paciente.setCodigoPostal(detallesPaciente.getCodigoPostal());
+		paciente.setSexo(detallesPaciente.getSexo());
+		paciente.setEdad(detallesPaciente.getEdad());
+		paciente.setFechaNacimiento(detallesPaciente.getFechaNacimiento());
+		paciente.setOcupacion(detallesPaciente.getOcupacion());
+		paciente.setMedicamentos(detallesPaciente.getMedicamentos());
+		paciente.setAlergias(detallesPaciente.getAlergias());
+		paciente.setReacciones(detallesPaciente.getReacciones());
 		
 		paciente pacienteActualizado = repositorio.save(paciente);
 		return ResponseEntity.ok(pacienteActualizado);
