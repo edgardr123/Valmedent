@@ -3,9 +3,9 @@ package com.edgar.valmedent.repositorio;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.edgar.valmedent.modelo.paciente;
+import com.edgar.valmedent.modelo.pacienteOdontograma;
 
 @Repository
-public interface pacienteRepositorio extends JpaRepository<paciente, Long> {
+public interface pacienteOdontogramaRepositorio extends JpaRepository<pacienteOdontograma, Long> {
 
 }
